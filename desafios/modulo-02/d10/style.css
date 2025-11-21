@@ -81,6 +81,10 @@ main {
     margin-bottom: 20px;
 }
 
+main img {
+    width: 100%;
+}
+
 main strong {
     color: var(--cor3);
 }
