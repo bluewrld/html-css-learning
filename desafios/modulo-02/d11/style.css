@@ -1,23 +1,26 @@
-body {
-    margin: 0;
-}
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
-#container {
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-}
+        #espaco {
+            min-height: 100vh;
+            width: 100%;
+            background: black url(imagens/espaco.jpg) center center no-repeat fixed;
+            background-size: cover;
+            position: relative;
+            overflow: hidden;
+        }
 
-#espaco {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+        #astronauta {
+            background: url(imagens/astronauta.png) center center no-repeat;
+            position: absolute;
+            height: 400px;
+            width: 400px;
+            background-size: contain;
 
-#astronauta {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+        }
