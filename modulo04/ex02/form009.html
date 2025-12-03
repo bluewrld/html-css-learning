@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+
+    <form action="cadastro.php" method="post">
+
+        <p>
+            <label for="inum">Numero 1: </label>
+            <input type="range" name="num" id="inum" min="0" max="10" value="5" oninput="val.innerHTML = Number(inum.value)">
+            <output id="val"></output>
+        </p>
+
+        <p>
+            <label for="inum2">Numero 2: </label>
+            <input type="range" name="num2" id="inum2" min="0" max="10" value="5" oninput="val2.innerHTML = Number(inum2.value)">
+            <output id="val2"></output>
+        </p>
+
+        <p>
+            <label for="inum3">Numero 3: </label>
+            <input type="range" name="num3" id="inum3" min="0" max="10" oninput="val3.innerHTML = Number(inum3.value)">
+            <output id="val3"></output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
