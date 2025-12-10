@@ -20,15 +20,15 @@ body , html {
 }
 
 main {
-    position: relative;
     height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 section#login {
-    position: absolute;
-    top: 50%;
-    left: 50%;
     overflow: hidden;
 
     background-color: white;
@@ -36,7 +36,6 @@ section#login {
     height: 515px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
-    transform: translate(-50%, -50%);
     transition: width .3s, height .3s;
     transition-timing-function: ease;
 }
