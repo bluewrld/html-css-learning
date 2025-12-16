@@ -9,9 +9,13 @@
             border: 3px solid blue;
             display: grid;
             gap: 10px;
-            grid-template: repeat(3, 100px) / repeat(3, auto);
-            place-items: start center;
-            place-content: space-between end;
+            grid-template-rows: repeat(3, 80px);
+            grid-template-columns: 100px 40%;
+            grid-auto-flow: row;
+            grid-auto-columns: 120px;
+            grid-auto-rows: 80px;
+            place-items: normal normal;
+            place-content: normal normal;
 
 
         }
@@ -32,6 +36,8 @@
         <div class="item">F</div>
         <div class="item">G</div>
         <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
     </div>
 </body>
 </html>
